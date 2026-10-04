@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="clock-container">
+        <header class="clock-header">
+            <h1 class="title">
+                Digital Clock
+            </h1>
+            <div class="format-buttons">
+                <button
+                    id="btn12"
+                    class="format-btn active"
+                    type="button">
+                    12 hr
+                </button>
+                <button
+                    id="btn24"
+                    class="format-btn"
+                    type="button">
+                    24 hr
+                </button>
+            </div>
+        </header>
+
+        <!-- Clock Display -->
+        <section class="clock-display">
+            <div class="time-wrapper">
+                <span id="time" class="time">
+                    00:00:00
+                </span>
+                <span id="period" class="period">
+                    AM
+                </span>
+            </div>
+            <div id="date" class="date">
+                January 1, 2023
+            </div>
+            <div id="day" class="day">
+                Monday
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
